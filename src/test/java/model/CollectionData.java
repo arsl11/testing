@@ -1,3 +1,5 @@
+package model;
+
 public class CollectionData {
     private String name;
     private String description;

@@ -1,3 +1,5 @@
+package model;
+
 public class CommentData {
     private String description;
 

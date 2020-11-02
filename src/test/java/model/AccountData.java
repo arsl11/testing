@@ -1,3 +1,5 @@
+package model;
+
 public class AccountData {
     private String username;
     private String password;
