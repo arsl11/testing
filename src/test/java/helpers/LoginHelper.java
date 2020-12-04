@@ -1,6 +1,6 @@
 package helpers;
 
-import helpers.HelperBase;
+import manager.ApplicationManager;
 import model.AccountData;
 import org.openqa.selenium.By;
 

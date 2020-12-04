@@ -1,5 +1,9 @@
-package helpers;
+package manager;
 
+import helpers.CollectionHelper;
+import helpers.CommentHelper;
+import helpers.LoginHelper;
+import helpers.NavigationHelper;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -18,7 +22,9 @@ public class ApplicationManager {
     private CommentHelper comment;
     private LoginHelper auth;
 
-    public ApplicationManager(){
+    private static ThreadLocal<ApplicationManager> app = new ThreadLocal<ApplicationManager>();
+
+    private ApplicationManager(){
         System.setProperty("webdriver.gecko.driver", "D:\\Projects\\Java\\SeleniumTesting\\src\\Drivers\\geckodriver.exe");
         driver = new FirefoxDriver();
         js = (JavascriptExecutor) driver;
@@ -29,6 +35,15 @@ public class ApplicationManager {
         auth = new LoginHelper(this);
         comment = new CommentHelper(this);
         collection = new CollectionHelper(this);
+    }
+
+    public static ApplicationManager getInstance(){
+        if(app.get() == null){
+            ApplicationManager newInstance = new ApplicationManager();
+            newInstance.getNavigation().OpenHomePage();
+            app.set(newInstance);
+        }
+            return app.get();
     }
 
     public WebDriver getDriver() {

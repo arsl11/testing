@@ -1,6 +1,6 @@
 package helpers;
 
-import helpers.HelperBase;
+import manager.ApplicationManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 

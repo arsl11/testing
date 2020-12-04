@@ -1,6 +1,8 @@
-import helpers.ApplicationManager;
-import org.junit.After;
+package tests;
+
+import manager.ApplicationManager;
 import org.junit.Before;
+import org.junit.jupiter.api.AfterAll;
 
 
 public class TestBase {
@@ -8,9 +10,9 @@ public class TestBase {
 
     @Before
     public void setUpTest() {
-        app = new ApplicationManager();
+        app = ApplicationManager.getInstance();
     }
-    @After
+    @AfterAll
     public void tearDownTest() {
         app.stop();
     }
