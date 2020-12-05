@@ -29,7 +29,7 @@ public class ApplicationManager {
         driver = new FirefoxDriver();
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
-        baseUrl = "https://ficbook.net/";
+        baseUrl = Settings.getBaseUrl();
 
         navigation = new NavigationHelper(this, baseUrl);
         auth = new LoginHelper(this);

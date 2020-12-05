@@ -8,7 +8,7 @@ import java.util.Random;
 
 
 public class TestBase {
-    protected ApplicationManager app;
+    static ApplicationManager app;
 
     @Before
     public void setUpTest() {

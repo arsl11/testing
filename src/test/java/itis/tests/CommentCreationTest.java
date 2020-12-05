@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class CommentCreationTest extends TestBase {
+public class CommentCreationTest extends AuthBase {
 
 
     public List<CommentData> getDataFromJson() throws IOException, ParseException {
@@ -34,8 +34,6 @@ public class CommentCreationTest extends TestBase {
 
     @Test
     public void testComment() throws IOException, ParseException {
-        AccountData user = new AccountData("ars11", "Arif2012");
-        app.getAuth().Login(user);
         List<CommentData> comments = getDataFromJson();
         app.getNavigation().OpenBlog();
         app.getComment().createComment(comments.get(0));
