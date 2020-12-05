@@ -1,7 +1,7 @@
 package itis.model;
 
 public class CommentData {
-    private String description;
+    public String description;
 
     public CommentData(String description) {
         this.description = description;
