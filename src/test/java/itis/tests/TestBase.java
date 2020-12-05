@@ -1,6 +1,6 @@
-package tests;
+package itis.tests;
 
-import manager.ApplicationManager;
+import itis.ApplicationManager;
 import org.junit.Before;
 import org.junit.jupiter.api.AfterAll;
 

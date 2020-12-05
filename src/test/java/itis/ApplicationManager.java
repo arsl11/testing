@@ -1,9 +1,9 @@
-package manager;
+package itis;
 
-import helpers.CollectionHelper;
-import helpers.CommentHelper;
-import helpers.LoginHelper;
-import helpers.NavigationHelper;
+import itis.helpers.CollectionHelper;
+import itis.helpers.CommentHelper;
+import itis.helpers.LoginHelper;
+import itis.helpers.NavigationHelper;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

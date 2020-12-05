@@ -1,7 +1,7 @@
-package helpers;
+package itis.helpers;
 
-import manager.ApplicationManager;
-import model.AccountData;
+import itis.ApplicationManager;
+import itis.model.AccountData;
 import org.openqa.selenium.By;
 
 public class LoginHelper extends HelperBase {

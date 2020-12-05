@@ -1,6 +1,6 @@
-package helpers;
+package itis.helpers;
 
-import manager.ApplicationManager;
+import itis.ApplicationManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 

@@ -1,4 +1,4 @@
-package model;
+package itis.model;
 
 public class CommentData {
     private String description;

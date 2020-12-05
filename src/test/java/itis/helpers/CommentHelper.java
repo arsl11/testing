@@ -1,7 +1,7 @@
-package helpers;
+package itis.helpers;
 
-import manager.ApplicationManager;
-import model.CommentData;
+import itis.ApplicationManager;
+import itis.model.CommentData;
 import org.openqa.selenium.By;
 
 public class CommentHelper extends HelperBase {

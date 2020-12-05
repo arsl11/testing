@@ -1,4 +1,4 @@
-package model;
+package itis.model;
 
 public class CollectionData {
     private String name;

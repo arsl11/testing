@@ -1,6 +1,6 @@
-package helpers;
+package itis.helpers;
 
-import manager.ApplicationManager;
+import itis.ApplicationManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 

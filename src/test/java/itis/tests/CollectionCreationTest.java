@@ -1,7 +1,7 @@
-package tests;
+package itis.tests;
 
-import model.AccountData;
-import model.CollectionData;
+import itis.model.AccountData;
+import itis.model.CollectionData;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,7 +1,7 @@
-package helpers;
+package itis.helpers;
 
-import manager.ApplicationManager;
-import model.CollectionData;
+import itis.ApplicationManager;
+import itis.model.CollectionData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
